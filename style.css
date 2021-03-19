@@ -1,1 +1,58 @@
+body {
+  background: linear-gradient(#615dad, #ffc8da);
+  background-size: 100vw 100vh;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
 
+img {
+  width: 400px; 
+  border-radius: 10px 10px 0 0;
+  margin-top: 50px;
+}
+
+.obdelnik {
+  width: 400px;
+  margin: -10px auto;
+  background-color: #283e50;
+}
+
+.popis {
+  padding: 10px 15px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+}
+
+.odkazy {
+  margin-left: -40px;
+}
+
+li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.pravidla {
+  background-color: #1fcca4;
+}
+.hrat {
+  background-color: #0197f6;
+  border-top: 1.5px solid #283e50;
+}
+.pravidla:hover {
+  background-color: #1cbb96;
+}
+.hrat:hover {
+  background-color: #0090e9;
+}

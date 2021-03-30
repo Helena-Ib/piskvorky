@@ -1,58 +1,78 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
 body {
-  background: linear-gradient(#615dad, #ffc8da);
-  background-size: 100vw 100vh;
-  color: #ffffff;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
+  min-height: 100%;
 }
 
-img {
-  width: 400px; 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  background-image: linear-gradient(to bottom, #615dad, #ffc8da);
+}
+
+.game {
+  max-width: 365px;
+  margin: 65px auto;
+}
+
+/* header */
+
+.header_picture {
+  width: 100%;
   border-radius: 10px 10px 0 0;
-  margin-top: 50px;
+  vertical-align: bottom;
 }
 
-.obdelnik {
-  width: 400px;
-  margin: -10px auto;
-  background-color: #283e50;
-}
+/* main content */
 
-.popis {
-  padding: 10px 15px;
-}
+.description{
+    color: #ffffff;
+    background-color: #283e50;
+    padding: 30px 15px;
+  }
 
-h1 {
+.title{
   font-family: 'Lobster', cursive;
-  font-size: 40px;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0.5em;
 }
 
-.odkazy {
-  margin-left: -40px;
+.text{
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
 }
 
-li {
-  list-style-type: none;
-  padding: 20px;
-}
-
-a {
-  text-decoration: none;
+/* buttons */
+.button{
+  display:block;
+  font-size: 1em;
   color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding: 1em 0 1em 0;
 }
 
-.pravidla {
+.rule{
   background-color: #1fcca4;
 }
-.hrat {
-  background-color: #0197f6;
-  border-top: 1.5px solid #283e50;
-}
-.pravidla:hover {
+.rule:hover{
   background-color: #1cbb96;
 }
-.hrat:hover {
+.start{
+  background-color: #0197f6;
+  border-top: 1px solid #283e50;
+}
+
+.start:hover{
   background-color: #0090e9;
 }

@@ -1,5 +1,11 @@
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 * {
   margin: 0;
@@ -25,7 +31,7 @@ body {
 
 /* header */
 
-.header_picture {
+.game__picture {
   width: 100%;
   border-radius: 10px 10px 0 0;
   vertical-align: bottom;
@@ -33,28 +39,29 @@ body {
 
 /* main content */
 
-.description{
-    color: #ffffff;
-    background-color: #283e50;
-    padding: 30px 15px;
-  }
+.game__description {
+  color: #ffffff;
+  background-color: #283e50;
+  padding: 5px 40px 20px 40px;
+}
 
-.title{
+.game__title {
   font-family: 'Lobster', cursive;
   font-size: 3em;
   text-align: center;
   margin-bottom: 0.5em;
+  padding-top: 0.5em;
 }
 
-.text{
+.game__text {
   font-size: 1em;
   line-height: 1.5;
   text-align: center;
 }
 
 /* buttons */
-.button{
-  display:block;
+.button {
+  display: block;
   font-size: 1em;
   color: #ffffff;
   text-decoration: none;
@@ -62,17 +69,86 @@ body {
   padding: 1em 0 1em 0;
 }
 
-.rule{
+.rule {
   background-color: #1fcca4;
 }
-.rule:hover{
+.rule:hover {
   background-color: #1cbb96;
 }
-.start{
+.start {
   background-color: #0197f6;
   border-top: 1px solid #283e50;
 }
 
-.start:hover{
+.start:hover {
   background-color: #0090e9;
 }
+
+
+/* Pravidla  */
+
+.circle, .cross {
+    filter: invert(100%);
+    width: 1em;
+    height: 1em;
+}
+
+header{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding:0;
+}
+
+li{
+  text-align: left;
+  line-height: 2;
+}
+
+.game__rules{
+  margin-left: 30px;
+}
+
+.pict{
+  width:100%;
+  padding-top: 40px;
+}
+
+
+/* media query */
+
+@media screen and (min-width: 800px){
+.game{
+  max-width: 700px;
+}
+
+.game__images{
+  display: flex;
+  flex-wrap: wrap;
+}
+ figure{
+   flex:1 1 50%;
+ }
+
+ figcaption{
+   font-size: 0.75em;
+ }
+
+ figure:nth-child(odd){
+   padding-right: 30px;
+ }
+
+ figure:nth-child(even){
+   padding-left:30px;
+ }
+
+ figure:nth-child(5n){
+   padding-bottom: 30px;
+ }
+}
+  
+@media screen and(min-width:1200px){
+  .game{
+    max-width: 900px;
+  }
+}
+

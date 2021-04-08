@@ -84,71 +84,76 @@ body {
   background-color: #0090e9;
 }
 
-
 /* Pravidla  */
 
-.circle, .cross {
-    filter: invert(100%);
-    width: 1em;
-    height: 1em;
+.game__rule {
+  margin: 65px auto;
+  max-width: 400px;
 }
 
-header{
+.circle,
+.cross {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+}
+
+header {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  padding:0;
+  padding: 0;
 }
 
-li{
+li {
   text-align: left;
   line-height: 2;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
-.game__rules{
+.game__rules {
   margin-left: 30px;
 }
 
-.pict{
-  width:100%;
+.pict {
+  width: 100%;
   padding-top: 40px;
 }
 
-
 /* media query */
 
-@media screen and (min-width: 800px){
-.game{
-  max-width: 700px;
-}
+@media screen and (min-width: 800px) {
+  .game__rule {
+    max-width: 700px;
+  }
 
-.game__images{
-  display: flex;
-  flex-wrap: wrap;
-}
- figure{
-   flex:1 1 50%;
- }
+  .game__images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  figure {
+    flex: 1 1 50%;
+  }
 
- figcaption{
-   font-size: 0.75em;
- }
+  figcaption {
+    font-size: 0.75em;
+  }
 
- figure:nth-child(odd){
-   padding-right: 30px;
- }
+  figure:nth-child(odd) {
+    padding-right: 30px;
+  }
 
- figure:nth-child(even){
-   padding-left:30px;
- }
+  figure:nth-child(even) {
+    padding-left: 30px;
+  }
 
- figure:nth-child(5n){
-   padding-bottom: 30px;
- }
-}
-  
-@media screen and(min-width:1200px){
-  .game{
-    max-width: 900px;
+  figure:nth-child(5n) {
+    padding-bottom: 30px;
   }
 }
 
+@media screen and(min-width:1200px) {
+  .game {
+    max-width: 900px;
+  }
+}

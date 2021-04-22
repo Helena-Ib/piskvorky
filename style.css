@@ -140,6 +140,12 @@ li {
   font-size: 22px;
 }
 
+.plays {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 #home,
 #back {
   border-radius: 5px;
@@ -188,6 +194,16 @@ li {
 .game__game--table button:focus,
 .game__game--table button:active {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.board__field--circle {
+  background: url(images/circle.svg) center no-repeat rgba(255, 255, 255, 0.3);
+  animation: createPicture 0.15s;
+}
+
+.board__field--cross {
+  background: url(images/cross.svg) center no-repeat rgba(255, 255, 255, 0.3);
+  animation: createPicture 0.15s;
 }
 
 /* media query */
